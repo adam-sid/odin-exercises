@@ -30,4 +30,16 @@ img {
 
 .container {
   display: flex;
+  justify-content: center;
+  gap: 52px;
 }
+
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.item {
+  max-width: 200px;
+}
+
