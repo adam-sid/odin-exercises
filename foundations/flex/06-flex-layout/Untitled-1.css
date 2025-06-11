@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  /* Make body a flex container, arrange children vertically */
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 8px 16px; /* Added padding for buttons */
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+}
+
+/* MY SOLUTION */
+
+/* Useful for debugging layout, can be removed for final version
+* {
+  outline: 1px solid red;
+}
+*/
+
+/* The .body class selector was incorrect and has been removed.
+   Styles for the <body> element are defined above. */
+
+.content {
+  flex-grow: 1; /* Allows .content to fill available vertical space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center children vertically within .content */
+  gap: 16px; /* Adds space between logo, input, and buttons */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px; /* Added padding */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  padding: 16px; /* Added padding */
+  align-items: center; /* Vertically align items in footer */
+}
+
+ul {
+  display: flex;
+  /* flex-direction: row; is the default for flex items */
+  list-style-type: none;
+  margin: 0; /* Remove default/explicit margin */
+  padding: 0; /* Remove default browser padding (e.g., padding-left) */
+  gap: 16px; /* Space between list items */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #4A4A4A; /* Example link color, adjust as needed */
+}
